@@ -1,0 +1,44 @@
+{
+    "name": "pro-gamer-moves",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.0.1",
+        "express": "^4.16.4",
+        "is-empty": "^1.2.0",
+        "jsonwebtoken": "^8.3.0",
+        "mongoose": "^5.10.2",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "validator": "^10.9.0",
+        "ws": "^6.2.1"
+    },
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "node-sass": "^4.14.1",
+        "nodemon": "^2.0.4"
+    }
+}
